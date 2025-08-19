@@ -1,8 +1,4 @@
-# React + Vite
+School project done in 3 weeks.
+Visist the project: https://webbkurs.ei.hv.se/~emju0004/Beat%20the%20chaser/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Some issues may occur when trying the game such as. Encoding of text and error messages in console when ending the game.
