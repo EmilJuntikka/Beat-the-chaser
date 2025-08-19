@@ -1,3 +1,5 @@
+REACT-Javascript-Vite-CSS-HTML 
+
 School project done in 3 weeks.
 Visist the project: https://webbkurs.ei.hv.se/~emju0004/Beat%20the%20chaser/
 
