@@ -1,0 +1,88 @@
+*{
+  margin: 0px;
+}
+body {
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+
+}
+body h2{
+  font-size: 3rem;
+}
+.screen h1{
+  text-align: center;
+  font-size: 5rem;
+  color: rgb(184, 178, 7);
+  text-shadow: 5px 0px 2px rgb(129, 3, 3), -5px 0px 2px rgb(4, 165, 28),0px -5px 2px rgb(26, 6, 159), 0px 5px 2px rgb(168, 4, 160);
+  letter-spacing: 10px;
+}
+.screen{
+  background-image: url(./images/background.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+.homescreen{
+  width: 75vw;
+  height: 80vh;
+  background-color: rgba(0, 0, 0, 0.329);
+  backdrop-filter: blur(2px);
+  border-radius: 15px;
+  margin: 0 auto;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  margin-top: 2vh;
+}
+.menu-header{
+  font-size: 5rem;
+  margin-top: 20%;
+}
+.btn{
+  width: 350px;
+  height: 80px;
+  border: 0px;
+  border-radius: 50px;
+  font-size: 3rem;
+  box-shadow: 2px 2px 2px black;
+  color: white;
+  margin-top: 30%;
+  margin: 0 auto;
+  font-family: "Spicy Rice", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.btn-multi{
+  background: rgb(16,147,4);
+  background: linear-gradient(45deg, rgba(16,147,4,1) 0%, rgba(4,152,153,1) 100%);
+}
+.btn-start{
+  background: rgb(147,4,4);
+  background: linear-gradient(45deg, rgba(147,4,4,1) 0%, rgba(205,209,8,1) 100%);
+}
+.btn-create{
+  background: rgb(147,4,4);
+  background: linear-gradient(45deg, rgba(147,4,4,1) 0%, rgba(8,15,209,1) 100%);
+}
+.btn-join{
+  background: rgb(9,213,218);
+  background: linear-gradient(45deg, rgba(9,213,218,1) 0%, rgba(207,8,209,1) 100%); 
+}
+.btn-copy{
+  font-size: 2rem;
+  height: 50px;
+  width: 200px;
+  background: rgb(218,9,9);
+  background: linear-gradient(45deg, rgba(218,9,9,1) 0%, rgba(51,8,209,1) 100%); 
+}
+button:hover{
+  transform: scale(1.1);
+}
+
+

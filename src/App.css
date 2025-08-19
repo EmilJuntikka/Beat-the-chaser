@@ -1,0 +1,509 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: 4px;
+    height: 400px;
+    justify-content: space-between;
+}
+audio{
+    display: none;
+}
+.mute{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+}
+.mute:hover{
+    cursor: pointer;
+}
+
+.Quiz{
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.Quiz h2{
+    height: fit-content;
+    padding: 25px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+.quiz-header p{
+    font-size: 3rem;
+}
+.timer{
+    text-align: center;
+    font-size: 2rem;
+    width: 80%;
+    margin: 0 auto;
+}
+.timer-bar{
+    height: 10px;
+    background-color: blue;
+    animation: timerbar 30s linear;
+    margin-bottom: 20px;
+
+}
+.quiz-header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.category{
+    width: fit-content;
+    height: auto;
+    background-color: blueviolet;
+    color: white;
+    font-size: 2rem;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid white;
+    margin: 0 auto;
+}
+.choices{
+    color: white;
+    width: 500px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 5px;
+    text-align: center;
+}
+.choices:hover{
+    background-color: rgba(255, 255, 255, 0.219);
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+}
+.choices::before{
+    background-color: transparent;
+}
+.choices:checked::before{
+    background-color: rgba(3, 209, 37, 0.219);
+}
+.choices-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.votes-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.votes-container p{
+    font-size: 2rem;
+}
+.flex-container{
+    display: flex;
+    gap: 30px;
+    font-size: 1rem;
+}
+.flex div p{
+  font-size: 1.5rem;
+}
+.flex-container .flex{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.correct{
+    font-size: 5rem;
+}
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+.information{
+    padding: 10px;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.difficulty{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.paragraph{
+    font-size: 2rem;
+}
+.information h4{
+    font-size: 2rem;
+}
+.image{
+    border-radius: 15px;
+}
+.container{
+    display: flex;
+    height: auto;
+    padding: 20px;
+    width: 700px;
+    margin: 0 auto;
+    justify-content: space-between;
+    text-align: center;
+}
+.container-steps{
+    display: flex;
+    height: auto;
+    padding: 20px;
+    width: 1100px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.vote-btn-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.vote-btn-container-item{
+    display: flex;
+    
+}
+.vote-btn-container-item p{
+    padding-top: 10px;
+}
+.vote-btn-container button{
+    background-color: white;
+    color: black;
+    width: 150px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+.multiplayer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+    align-items: center;
+}
+.multiplayer h3{
+    font-size: 2rem;
+    text-align: center;
+}
+.in-lobby{
+    gap: 30px;
+}
+.in-lobby p{
+    font-size: 2rem;
+}
+.room{
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    background: rgb(218,9,217);
+    background: linear-gradient(45deg, rgba(218,9,217,1) 0%, rgba(51,8,209,0.2358193277310925) 100%);
+    border-radius: 5px;
+    padding: 20px;
+}
+.room-input-cont{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 2.5rem;
+}
+
+.room-input-cont input{
+    background-color: rgba(88, 87, 87, 0.614);
+    border: 1px solid rgb(255, 255, 255);
+    height: 45px;
+    width: 240px;
+    border-radius: 5px;
+    font-size: 2rem;
+    color: white;
+
+}
+.room-code-cont{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+
+}
+.room-code{
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 5px;
+}
+.players-in-room{
+    height: 30px;
+    letter-spacing: 4px;
+    height: auto;
+    width: 600px;
+    margin-top: 50px;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+.players-in-room p{
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 2rem;
+}
+.players-in-room p:nth-child(1){
+    background: rgb(16,147,4);
+    background: linear-gradient(45deg, rgba(16,147,4,1) 0%, rgba(4,152,153,1) 100%);
+
+}
+.players-in-room p:nth-child(2){
+    background: rgb(147,4,4);
+    background: linear-gradient(45deg, rgba(147,4,4,1) 0%, rgba(205,209,8,1) 100%);
+}
+.players-in-room p:nth-child(3){
+    background: rgb(9,213,218);
+    background: linear-gradient(45deg, rgba(9,213,218,1) 0%, rgba(207,8,209,1) 100%); 
+}
+.players-in-room p:nth-child(4){
+    background: rgb(147,4,4);
+    background: linear-gradient(45deg, rgba(147,4,4,1) 0%, rgba(8,15,209,1) 100%);
+}
+.welcome-room{
+    font-size: 1.5rem;
+}
+.response{
+    background-color: white;
+    color: black;
+    height: auto;
+    width: auto;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 5px;
+}
+.player-steps-container{
+  background-color: rgba(0, 0, 0, 0.603);
+  border-radius: 15px;
+  padding: 5px 20px 20px 20px;
+}
+.steps-box{
+    margin: 0 auto;
+    width: 50px;
+    height: 10px;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+}
+.chaser-box{
+    background-color: red;
+    width: 350px;
+    height: 15px;
+    margin-top: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.center{
+    text-align: center;
+}
+.answers-array{
+    width: auto;
+    height: auto;
+}
+.player-box{
+    background-color: green;
+    width: 350px;
+    height: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+.para{
+    font-size: 2rem;
+}
+@keyframes timerbar {
+    0% {width: 100%;}
+    50% {width: 50%;}
+    100% {width: 0%;}
+    
+}
+@media screen and (max-width: 600px) {
+    .screen{
+      background-image: url(./images/mobile1.png);
+      background-position: center;
+      background-size: cover;
+      height: 100vh;
+    }
+    .screen .homescreen{
+      height: auto;
+      border-radius: 15px;
+      margin: 0 auto;
+      display: flex;
+      gap: 10px;
+      height: auto;
+      margin-top: 2vh;
+      width: 95vw;
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+    .btn{
+        height: 40px;
+        width: 200px;
+        font-size: 1.5rem;
+    }
+    .homescreen .menu{
+      height: auto;
+      padding: 10px;
+      gap: 10px;
+      
+    }
+    .homescreen h2{
+        font-size: 2rem;
+    }
+    .screen h1{
+      font-size: 2rem;
+    }
+    .information .paragraph{
+      font-size: 1rem;
+    }
+    .image{
+      display: none;
+    }
+    .homescreen .multiplayer{
+      gap: 50px;
+      width: auto;
+    }
+    .multiplayer .room{
+      width: 80vw;
+      padding: 10px;
+      gap: 20px;
+    }
+    .room .room-input-cont input {
+      background-color: rgba(88, 87, 87, 0.614);
+      border: 1px solid rgb(255, 255, 255);
+      height: 30px;
+      width: 150px;
+      border-radius: 5px;
+      font-size: 1.3rem;
+      color: white;
+  }
+  .multiplayer .room-code-cont {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .room-code-cont .room-code{
+    font-size: 1.5rem;
+  }
+  .multiplayer .room-input-cont {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+  }
+  .multiplayer .room-input-cont label{
+    font-size: 1.1rem;
+    width: auto;
+    padding-top: 5px;
+  }
+  .multiplayer .room-input-cont input{
+    height: 30px;
+    width: 150px;
+    font-size: 1.3rem;
+  }
+  .homescreen .players-in-room {
+    height: 30px;
+    letter-spacing: 4px;
+    height: auto;
+    width: 200px;
+  }
+  .homescreen .players-in-room p{
+    font-size: 1.5rem;
+  }
+  .homescreen .Quiz{
+    width: 90vw;
+    height: auto;
+    justify-content: space-between;
+    height: auto;
+  }
+  .Quiz .container {
+    width: auto;
+    margin: 0 auto;
+  }
+  .container .choices-container{
+    width: 80vw;
+    gap: 10px;
+  }
+  .Quiz .quiz-header{
+    width: auto;
+  }
+  .Quiz .timer{
+    height: auto;
+  }
+  .Quiz .response {
+    background-color: white;
+    color: black;
+    height: auto;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    border-radius: 5px;
+  }
+  .choices-container .choices {
+    color: white;
+    width: auto;
+    height: auto;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    padding: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .Quiz .container-steps {
+    flex-direction: column;
+    height: auto;
+    width: 90vw;
+    padding: 0px;
+    gap: 20px;
+  }
+  .container-steps .steps-box{
+    width: 30px;
+    height: 5px;
+    margin-top: 10px;
+  }
+  .container-steps .player-box{
+    width: 80px;
+    height: 5px;
+    margin: 10px auto 0px auto;
+  }
+  .container-steps .chaser-box{
+    width: 80px;
+    height: 5px;
+    margin: 10px auto 0px auto;
+  }
+  .Quiz .quiz-header p{
+    font-size: 1.5rem;
+  }
+  .container-steps .votes-container p{
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .Quiz .container{
+    width: 80vw;
+  }
+  .votes-container .flex-container{
+    display: flex;
+    gap: 10px;
+}
+  .screen .mute{
+    width: 30px;
+    top: 2%;
+    left: 2%;
+  }
+   
+  }
